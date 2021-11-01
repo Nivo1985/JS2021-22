@@ -23,6 +23,7 @@
 // book1.title = "Adam";
 // book2.title = "Rogowski";
 // book1.rrr = 23;
+
 // console.log(book1 == book2);
 // console.log(book1 == book3);
 
@@ -39,7 +40,7 @@
 //   console.log(bookObject.hardCover);
 // }
 
-// showBookInfo(book);
+//  showBookInfo(book);
 
 // function changeCover(bookObject) {
 //   bookObject.hardCover = !bookObject.hardCover;
@@ -76,9 +77,11 @@
 //   showBookInfo(books[i]);
 // }
 
-// books.forEach(function(book, i, tab) {
-//   let j = 1;
+// books.forEach(function(book) {
+//     showBookInfo(book);
 // });
+
+// books.forEach( book => showBookInfo(book));
 
 //4 out of the box
 // Math.max();
@@ -89,6 +92,8 @@
 // Math.SQRT2;
 // Math.LOG10E;
 // Math.E;
+
+
 
 // let dateObj = new Date();
 // console.log(dateObj);
@@ -106,12 +111,13 @@
 // console.log(str.anchor("test"));
 // console.log(str.length);
 
+
 // let k = 2.12345;
 // console.log(k.toExponential(3));
 // console.log(k.toFixed(3));
 // console.log(k.toPrecision(3));
 
-// k = 4;
+// let k = 4;
 // console.log(Number.isInteger(k));
 // console.log(Number.isNaN(k));
 // console.log(Number.isSafeInteger(k));

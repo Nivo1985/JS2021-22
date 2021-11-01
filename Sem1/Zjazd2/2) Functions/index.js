@@ -43,7 +43,7 @@
 //   let result = x + y;
 //   return result;
 // }
-//let var1 = getSum(2, 3);
+// let var1 = getSum(2, 3);
 // console.log("Sum equels :" + var1);
 // console.log("Is of type :" + typeof var1);
 // let var2 = getSum(2, "Karol");
@@ -84,6 +84,14 @@
 //   console.log("exampleFunction executed");
 //   console.log(x);
 // }
+// exampleFunction();
+// console.log(x);
 
+// let x = 5;
+// function exampleFunction(x) {
+//   x = 10;
+//   console.log("exampleFunction executed");
+//   console.log(x);
+// }
 // exampleFunction();
 // console.log(x);
