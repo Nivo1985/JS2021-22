@@ -1,4 +1,4 @@
-//1
+// //1
 // let obj = {
 //   id: 1,
 //   getId: function () {

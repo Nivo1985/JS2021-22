@@ -1,4 +1,4 @@
-// // //1
+//1
 // function one() {
 //   console.log("one");
 // }
@@ -15,5 +15,4 @@
 //   console.log(var1);
 //   return { x: 5 };
 // })();
-
 // console.log(iife);
