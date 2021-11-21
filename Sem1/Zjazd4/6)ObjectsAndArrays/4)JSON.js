@@ -38,20 +38,20 @@
 
 //4
 
-// let peopleJSON = `[
-//     {
-//         "id":1,
-//         "name":"Karol Rogowski"
-//     },
-//     {
-//         "id":2,
-//         "name":"Jan Kowalski"
-//     },
-//     {
-//         "id":3,
-//         "name":"Robert Lewandowski"
-//     }
-// ]`;
+let peopleJSON = `[
+    {
+        "id":1,
+        "name":"Karol Rogowski"
+    },
+    {
+        "id":2,
+        "name":"Jan Kowalski"
+    },
+    {
+        "id":3,
+        "name":"Robert Lewandowski"
+    }
+]`;
 
-// let people = JSON.parse(peopleJSON);
-// console.log(people);
+let people = JSON.parse(peopleJSON);
+console.log(people);

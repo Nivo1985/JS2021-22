@@ -5,7 +5,7 @@
 
 // "Karol Rogowski".showMe();
 
-// 2 Number
+// // 2 Number
 // Number.prototype.getValueDescription = function () {
 //   return "My value is: " + this;
 // };

@@ -9,12 +9,14 @@
 // };
 
 // let karol = new Person("Karol", "Rogowski");
+// // karol.sayHello = function () {
+// //     console.log("Object inner say hello");
+// //   };
 // let adam = new Person("Adam", "Tur");
 
 // console.log(karol, adam);
-
 // karol.sayHello();
-// console.log(karol.toString());
+// adam.sayHello();
 
 // 2 after object is created
 // function Person(firstName, lastName) {

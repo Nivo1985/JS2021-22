@@ -32,7 +32,7 @@ let people = [
 // people.forEach((p) => p.sayHello());
 
 // people.forEach((p) => (p.name = p.name + "123"));
-// people.forEach((p) => console.log(p));
+// people.forEach((p) => console.log(p.name));
 
 // let result = people.map((p, i) => i + ":" + p.name);
 // console.log(result);

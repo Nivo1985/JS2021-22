@@ -3,7 +3,7 @@
 //   id: 1,
 //   data: "example data",
 // };
-// var proxy = (function (foo) {
+// let proxy = (function (foo) {
 //   return {
 //     getData: function () {
 //       return foo;
@@ -26,7 +26,7 @@
 //   data: "example data",
 // };
 
-// var proxy = (function (foo) {
+// let proxy = (function (foo) {
 //   return {
 //     getData: function () {
 //       return foo;
@@ -43,14 +43,14 @@
 // console.log(dataObject.data);
 
 // 3
-// let obj1 = { x: 1, y: 2, z: 3, f: () => {} };
-// let obj2 = { z: 4 };
-// let result;
-// result = Object.assign({}, obj1, obj2);
-// console.log(result);
-// result = Object.assign({}, obj2, obj1);
-// console.log(result);
-// result = Object.assign({ x: 0 }, obj2, obj1);
-// console.log(result);
-// result = Object.assign(obj1, obj2);
-// console.log(result);
+let obj1 = { x: 1, y: 2, z: 3, f: () => {} };
+let obj2 = { z: 4 };
+let result;
+result = Object.assign({}, obj1, obj2);
+console.log(result);
+result = Object.assign({}, obj2, obj1);
+console.log(result);
+result = Object.assign({ x: 0, w:-1 }, obj2, obj1);
+console.log(result);
+result = Object.assign(obj1, obj2);
+console.log(result);
