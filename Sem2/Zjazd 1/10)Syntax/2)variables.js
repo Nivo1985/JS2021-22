@@ -7,7 +7,7 @@
 // console.log(r);
 // var r=10;
 // console.log(r);
-//2
+
 
 // var myVar = 10;
 // function myfun(){
@@ -36,15 +36,6 @@
 
 // var myVar = 10;
 // function myfun(){
-//     console.log(myVar);
-//     myVar = 11;
-//     var myVar;
-// }
-// myfun();
-// console.log(myVar);
-
-// var myVar = 10;
-// function myfun(myVar){
 //     console.log(myVar);
 //     myVar = 11;
 //     var myVar;

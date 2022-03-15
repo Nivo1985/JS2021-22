@@ -1,41 +1,40 @@
 ///1
-// var t = 1
-// var r = 4
-// if(true){console.log(t,r)}
+// var t = 1;
+// var r = 4;
+// if(true){console.log(t,r);}
 
 //2
-// var r = 4 
-// console.log('r')
+// var r = 4;
+// console.log('r');
 
 //2,5 no insert
 
-// var x =1;
-// var y =5;
-// var d  = x + y
+// var x =1
+// var y =5
+// var d  = x + y;
 // [1,2,3].forEach(e => console.log(e));
 
 // var x =1
 // var y =5
 // var d  = x + y
-// [1].forEach(e => console.log(e));
+// [1].map(e => console.log(e));
 
 // var x =1;
 // var y =5;
-// var d  = x + y
-// (function(){
+// var d  = x + y(function(){
 //     console.log('call');
 // })();
 
 // var x = [1,2,3];
-// var t = x
+// var t = x;
 // [1].toString();
 // console.log(t);
 
 //3
 
-// function semicolonTest() {
-//   return
-//   {
+// function semicolonTest() 
+// {
+//   return {
 //     test: 1
 //   }
 // }
@@ -103,7 +102,7 @@
 //     console.log('X does not exists');
 // }
 
-// var x;
+// var x=0;
 // if(x){
 //     console.log('X exists');
 // }
