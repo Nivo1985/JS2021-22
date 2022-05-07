@@ -1,6 +1,6 @@
 //1
 // function User() {
-//   this.name = "Peter"; // long API call
+//   this.name = "Peter";  
 //   this.age = 25;
 // }
 // const user1 = new User();
@@ -22,6 +22,7 @@
 // }
 
 // const user1 = new User();
+// instance = {};
 // const user2 = new User();
 
 // console.log(user1 === user2);

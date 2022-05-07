@@ -15,7 +15,7 @@
 //   enumerable: true
 // }); // TypeError - one way
 
-// "use strict"; // with and without
+//  "use strict"; // with and without
 // var myObject = {
 //   a: 2
 // };
@@ -33,13 +33,15 @@
 // console.log(myObject.b); // 3
 
 //constant
-// var myObject = {};
+// const myObject = {};
 // Object.defineProperty(myObject, "FAVORITE_NUMBER", {
 //   value: 42,
 //   writable: false,
 //   configurable: false
 // });
+// console.log(myObject);
 
+// "use strict";
 // var myObject = {
 //   a: 2
 // };
@@ -47,14 +49,6 @@
 // myObject.b = 3;
 // console.log(myObject.b); // undefined
 
-// "use strict";
-// var myObject = {
-//   a: 2
-// };
-// Object.preventExtensions(myObject);
-// console.log("Order test");
-// myObject.b = 3;
-// console.log(myObject.b); // Error
 
 //all configurable false + preventExtensions
 // var myObject = {
@@ -62,5 +56,6 @@
 // };
 // Object.seal(myObject);
 // delete myObject.a;
+// myObject.a =4;
 // myObject.b = 3;
 // console.log(myObject);

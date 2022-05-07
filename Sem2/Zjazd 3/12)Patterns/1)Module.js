@@ -14,17 +14,15 @@
 //   };
 // })();
 // console.log(myModule);
-// // console.log(myModule.privateVariable);//
-// // myModule.privateVariable = "Super Hacker";//
-// // console.log(myModule.privateVariable);//
+// console.log(myModule.privateVariable);//
+// myModule.privateVariable = "Super Hacker";//
+// console.log(myModule.privateVariable);//
 // myModule.publicMethod();
 
 
 // not in iffe
-// let createModul = function() {
+// let createModul = function(x) {
 //   const privateVariable = "Hello World";
-
-
 //   function privateMethod() {
 //     console.log(privateVariable,x);
 //   }
@@ -37,29 +35,29 @@
 //   };
 // };
 
-// let myModule = createModul();
-// // console.log(myModule);
+// let myModule = createModul("Test");
+// console.log(myModule);
 // myModule.publicMethod();
 
 // in object
-// let modulesObject = {
-//   createModul: function() {
-//     const privateVariable = "Hello World";
+let modulesObject = {
+  createModul: function() {
+    const privateVariable = "Hello World";
 
-//     function privateMethod() {
-//       console.log(privateVariable);
-//     }
-//     return {
-//       publicMethod: function() {
-//         console.log("publicMethod start");
-//         privateMethod();
-//         console.log("publicMethod end");
-//       }
-//     };
-//   }
-// };
+    function privateMethod() {
+      console.log(privateVariable);
+    }
+    return {
+      publicMethod: function() {
+        console.log("publicMethod start");
+        privateMethod();
+        console.log("publicMethod end");
+      }
+    };
+  }
+};
 
-// let myModule = modulesObject.createModul();
+let myModule = modulesObject.createModul();
 
-// console.log(myModule);
-// myModule.publicMethod();
+console.log(myModule);
+myModule.publicMethod();

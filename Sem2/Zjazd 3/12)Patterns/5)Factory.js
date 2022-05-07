@@ -102,56 +102,64 @@
 // console.log(truck);
 
 // // 3
-// const factory = (function() {
-//   class Car {
-//     constructor(options) {
-//       this.doors = options.doors || 4;
-//       this.state = options.state || "brand new";
-//       this.color = options.color || "white";
-//     }
-//   }
-//   class Truck {
-//     constructor(options) {
-//       this.doors = options.doors || 4;
-//       this.state = options.state || "used";
-//       this.color = options.color || "black";
-//     }
-//   }
+const factory = (function() {
+  class Car {
+    constructor(options) {
+      this.doors = options.doors || 4;
+      this.state = options.state || "brand new";
+      this.color = options.color || "white";
+    }
+  }
+  class Truck {
+    constructor(options) {
+      this.doors = options.doors || 4;
+      this.state = options.state || "used";
+      this.color = options.color || "black";
+    }
+  }
+  
+  let counter;
 
-//   return {
-//     createVehicle: options => {
-//       if (options.doors < 2) throw new Error("Are you insane??");
-//       if (options.vehicleType === "car") {
-//         return new Car(options);
-//       } else if (options.vehicleType === "truck") {
-//         return new Truck(options);
-//       }
-//     }
-//   };
-// })();
+  return {
+    createVehicle: options => {
 
-// const car = factory.createVehicle({
-//   vehicleType: "car",
-//   doors: 4,
-//   color: "silver",
-//   state: "Brand New"
-// });
-// const truck = factory.createVehicle({
-//   vehicleType: "truck",
-//   doors: 2,
-//   color: "white",
-//   state: "used"
-// });
+      if(options.doors < 2) throw new Error ("invalid data");
+      
+      if(++this.counter <10) reset();
+      if (options.vehicleType === "car") {
+        console.log("Car is being assembled");
+        let car= new Car(options);
+        console.log("Car assembled");
+        return car;
+      } else if (options.vehicleType === "truck") {
+        return new Truck(options);
+      }
+    }
+  };
+})();
 
-// console.log(car);
+const car = factory.createVehicle({
+  vehicleType: "car",
+  doors: 4,
+  color: "silver",
+  state: "Brand New"
+});
+const truck = factory.createVehicle({
+  vehicleType: "truck",
+  doors: 2,
+  color: "white",
+  state: "used"
+});
 
-// console.log(truck);
+console.log(car);
 
-// console.log(
-//   // class accesable. Good idea?
-//   new Car({
-//     doors: "Yes",
-//     color: 666,
-//     state: Date.now()
-//   })
-// );
+console.log(truck);
+
+console.log(
+  // class accesable. Good idea?
+  new Car({
+    doors: "Yes",
+    color: 666,
+    state: Date.now()
+  })
+);

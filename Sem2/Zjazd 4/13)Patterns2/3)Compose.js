@@ -25,6 +25,7 @@
 // }
 
 // function compose(f1, f2) {
+//     console.log("compose of " + f1 + " and " + f2);
 //     return function fc() {
 //         var args = [].slice.call(arguments);
 //         return f2(f1(args.shift(), args.shift()), args.shift());

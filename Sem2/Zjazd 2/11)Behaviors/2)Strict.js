@@ -16,15 +16,6 @@
 // show("test");
 // console.log(innerParam);
 
-// "use strict";
-// let innerParam;
-// function show(param) {
-//   innerParam = param;
-//   console.log(param);
-// }
-// console.log("ORDER TEST");
-// show("test");
-// console.log(innerParam);
 
 // function show(param) {
 //   "use strict";
@@ -62,7 +53,6 @@
 // console.log(obj);
 
 //2
-// why this global prototypes or way func was called
 // function foo() {
 //     console.log(this);
 // }

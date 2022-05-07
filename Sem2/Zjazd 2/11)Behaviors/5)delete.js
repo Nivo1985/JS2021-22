@@ -20,7 +20,9 @@
 // var obj = {a:1, b:2};
 // obj = undefined;
 // console.log(obj);
-// console.log(obj2);
+
+// const i = 1;
+// i = undefined;
 
 // var obj = { a: "A" };
 // var b = { c: "C", d: "D" };
@@ -37,11 +39,6 @@
 // var obj = { a: "A", b: "B" };
 // delete obj;
 // console.log(obj);
-
-// 'use strict';
-// var x = 6;
-// delete x;
-// console.log(x);
 
 // 'use strict';
 // var x = 6;
